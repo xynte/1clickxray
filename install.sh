@@ -50,12 +50,6 @@ fi
 # Selamat datang
 print_msg $YB "Selamat datang! Skrip ini akan memasang beberapa paket penting pada sistem Anda."
 
-# Update package list
-print_msg $YB "Memperbarui daftar paket..."
-apt update -y
-check_success
-sleep 1
-
 # Install paket pertama
 print_msg $YB "Memasang socat, netfilter-persistent, dan bsdmainutils..."
 apt install socat netfilter-persistent bsdmainutils -y
